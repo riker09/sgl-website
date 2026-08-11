@@ -1,0 +1,22 @@
+name: Plain JS Website per FTP übertragen
+
+on:
+  repository_dispatch:
+    types: [directus-update]
+  workflow_dispatch: # Ermöglicht manuellen Start über die GitHub-Oberfläche
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v6
+
+      - name: Dateien per FTP hochladen
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist # Lädt die gebaute Website hoch
+          server-dir: /html/ # Pfad bei FTP Hoster
