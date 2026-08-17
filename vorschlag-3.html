@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SG Lagesbüttel – Sport & Gemeinschaft</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT:'#24890d', dark:'#1a660a', light:'#2fa814', soft:'#eef7ea' } } } } }
+  </script>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+  <header class="border-b border-stone-200 bg-stone-50/90 backdrop-blur sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#" class="inline-flex bg-white rounded-xl px-2 py-1.5 ring-1 ring-stone-200 shadow-sm"><img src="./logo.png" alt="SG Lagesbüttel" class="h-9 w-auto" /></a>
+      <ul class="hidden sm:flex gap-7 text-sm font-medium text-stone-600">
+        <li><a href="#kkv" class="hover:text-brand">Schießsport</a></li>
+        <li><a href="#sv" class="hover:text-brand">Sport</a></li>
+        <li><a href="#kontakt" class="hover:text-brand">Kontakt</a></li>
+      </ul>
+      <a href="#kontakt" class="text-brand-dark font-semibold text-sm hover:underline">Mitglied werden</a>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-5">
+    <!-- Split Hero -->
+    <section class="grid lg:grid-cols-2 gap-0 mt-10 lg:mt-0 rounded-3xl overflow-hidden shadow-lg">
+      <div class="p-8 sm:p-12 flex flex-col justify-center bg-white">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brand">SG Lagesbüttel</span>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-stone-900 leading-tight">Sport für jede Generation.</h1>
+        <p class="mt-5 text-stone-600 leading-relaxed">Zwei Sparten, ein Ziel: Bewegung, Gemeinschaft und faire Wettkämpfe – mitten in Lagesbüttel.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#sv" class="bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition">Angebote ansehen</a>
+          <a href="#kontakt" class="text-stone-700 font-semibold px-6 py-3 rounded-lg border border-stone-300 hover:border-brand hover:text-brand transition">Kontakt</a>
+        </div>
+      </div>
+      <div class="relative min-h-[320px] lg:min-h-full">
+        <img src="./sgl.jpg" alt="Panorama der Sporthalle in Lagesbüttel" class="absolute inset-0 w-full h-full object-cover object-center" />
+      </div>
+    </section>
+
+    <!-- KKV -->
+    <section id="kkv" class="py-20">
+      <h2 class="text-3xl font-bold text-stone-900">Sparte KKV · Schießsport</h2>
+      <p class="mt-3 text-stone-600 max-w-2xl">Breites Gattungs‑Angebot – vom Luftgerät bis zur Sportpistole, dazu Bogenschießen, Blasrohr und Dart.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="text-sm bg-white border border-stone-200 rounded-full px-4 py-2 font-medium">Luftgewehr</span>
+        <span class="text-sm bg-white border border-stone-200 rounded-full px-4 py-2 font-medium">Luftpistole</span>
+        <span class="text-sm bg-white border border-stone-200 rounded-full px-4 py-2 font-medium">Scatt-Gewehr</span>
+        <span class="text-sm bg-white border border-stone-200 rounded-full px-4 py-2 font-medium">Kleinkalibergewehr</span>
+        <span class="text-sm bg-white border border-stone-200 rounded-full px-4 py-2 font-medium">Sportpistole</span>
+        <span class="text-sm bg-brand-soft text-brand-dark rounded-full px-4 py-2 font-medium">🏹 Bogenschießen</span>
+        <span class="text-sm bg-white border border-stone-200 rounded-full px-4 py-2 font-medium">Blasrohr</span>
+        <span class="text-sm bg-brand-soft text-brand-dark rounded-full px-4 py-2 font-medium">🎯 Dart</span>
+      </div>
+    </section>
+
+    <!-- SV zweispaltig + Bodenbild -->
+    <section id="sv" class="bg-white rounded-3xl shadow-sm border border-stone-200 p-8 sm:p-10 grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-bold text-stone-900">Sparte SV · Allgemeiner Sport</h2>
+        <div class="mt-6 grid sm:grid-cols-2 gap-x-8 gap-y-6">
+          <div><p class="font-semibold flex items-center gap-2">🤸 Kinder- & Jugendturnen</p><p class="text-sm text-stone-500 mt-1.5">Bis 3 mit Elternteil · 3–8 J. · Rhythmik 8–14 J.</p></div>
+          <div><p class="font-semibold flex items-center gap-2">💚 Gesundheitssport</p><p class="text-sm text-stone-500 mt-1.5">60+ · Pilates · Stuhlgymnastik</p></div>
+          <div><p class="font-semibold flex items-center gap-2">🏋️ Fitness</p><p class="text-sm text-stone-500 mt-1.5">Yoga · Fitness-Boxen</p></div>
+          <div><p class="font-semibold flex items-center gap-2">🏐 Ballsport</p><p class="text-sm text-stone-500 mt-1.5">Kinder ab 8 · Tischtennis · Fußball</p></div>
+          <div><p class="font-semibold flex items-center gap-2">🥋 Kampfsport</p><p class="text-sm text-stone-500 mt-1.5">Ju Jutsu · Judo · Krav Maga</p></div>
+          <div><p class="font-semibold flex items-center gap-2">🚶 Walking</p><p class="text-sm text-stone-500 mt-1.5">Gemeinsam an der frischen Luft</p></div>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-md h-56 lg:h-auto">
+        <img src="./Sporthallenboden.jpg" alt="Detailaufnahme des Sporthallenbodens" class="w-full h-full object-cover" />
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-20">
+      <div class="bg-brand/10 rounded-3xl p-8 sm:p-12 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-stone-900">Lass uns sprechen</h2>
+          <p class="mt-3 text-stone-600">Schnuppern, Fragen, beitreten – wir sind für dich da.</p>
+          <ul class="mt-5 space-y-2 text-stone-700 text-sm">
+            <li>📍 Sportanlage Lagesbüttel</li>
+            <li>📞 [Telefonnummer]</li>
+            <li>✉️ [E-Mail]</li>
+          </ul>
+        </div>
+        <form class="space-y-3 bg-white rounded-2xl p-6 shadow-sm">
+          <input type="text" placeholder="Name" class="w-full rounded-lg border border-stone-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+          <input type="email" placeholder="E-Mail" class="w-full rounded-lg border border-stone-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+          <textarea rows="3" placeholder="Nachricht" class="w-full rounded-lg border border-stone-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+          <button class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 rounded-lg transition">Absenden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-6xl mx-auto px-5 py-10 text-sm text-stone-500 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <span class="inline-flex bg-white rounded-lg px-2 py-1"><img src="./logo.png" alt="SG Lagesbüttel" class="h-8 w-auto" /></span>
+    <div class="flex gap-6"><a href="#" class="hover:text-brand">Impressum</a><a href="#" class="hover:text-brand">Datenschutz</a></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SG Lagesbüttel – Sport & Schießsport</title>
+  <meta name="description" content="SG Lagesbüttel – Sportverein mit Sparten Schießsport (KKV) und allgemeinem Sport (SV): Turnen, Fitness, Ballsport, Kampfsport, Walking und mehr." />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      brand: { DEFAULT:'#24890d', dark:'#1a660a', light:'#2fa814', soft:'#eef7ea' }
+    } } } }
+  </script>
+</head>
+<body class="bg-white text-stone-800 antialiased">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-stone-200">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 h-18 py-3 flex items-center justify-between">
+      <a href="#" class="inline-flex items-center bg-white rounded-xl px-2 py-1.5 ring-1 ring-stone-200 shadow-sm">
+        <img src="./logo.png" alt="Logo der SG Lagesbüttel" class="h-10 w-auto" />
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#kkv" class="hover:text-brand">Schießsport</a></li>
+        <li><a href="#sv" class="hover:text-brand">Sport</a></li>
+        <li><a href="#termine" class="hover:text-brand">Termine</a></li>
+        <li><a href="#kontakt" class="hover:text-brand">Kontakt</a></li>
+      </ul>
+      <a href="#kontakt" class="bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition">Mitglied werden</a>
+      <button class="md:hidden text-stone-700" aria-label="Menü"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-[78vh] flex items-center">
+      <img src="./sgl.jpg" alt="Panorama der Sport- und Turnhalle in Lagesbüttel" class="absolute inset-0 w-full h-full object-cover object-center" />
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand/55 to-transparent"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 w-full">
+        <p class="text-green-100 font-semibold tracking-widest uppercase text-sm mb-3">Sportverein · Lagesbüttel</p>
+        <h1 class="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl max-w-2xl leading-tight">Zwei Sparten, <span class="text-green-200">ein</span> Verein.</h1>
+        <p class="mt-5 text-green-50 text-lg max-w-xl">Von Bogenschießen und Dart über Kinderturnen bis Yoga – bei der SG Lagesbüttel ist für jede Altersgruppe und jeden Sport ein Platz frei.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#sv" class="bg-white text-brand-dark font-semibold px-6 py-3 rounded-lg hover:bg-green-50 transition">Unsere Sparten</a>
+          <a href="#kontakt" class="border border-white/60 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition">Schnuppern kommen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sparte KKV -->
+    <section id="kkv" class="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center gap-3">
+        <span class="text-brand text-3xl">🎯</span>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-brand">Sparte KKV</p>
+          <h2 class="text-3xl font-bold text-stone-900">Schießsport</h2>
+        </div>
+      </div>
+      <p class="mt-4 text-stone-600 max-w-2xl">Breites Gattungs‑Angebot vom Luftgerät bis zur Sportpistole – dazu Bogenschießen, Blasrohr und Dart.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>Luftgewehr</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>Luftpistole</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>Scatt-Gewehr</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>Kleinkalibergewehr</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>Sportpistole</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>🏹 Bogenschießen</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>Blasrohr</span>
+        <span class="inline-flex items-center gap-2 bg-brand-soft text-brand-dark font-medium text-sm px-4 py-2 rounded-full"><span class="w-2 h-2 rounded-full bg-brand"></span>🎯 Dart</span>
+      </div>
+    </section>
+
+    <!-- Sparte SV -->
+    <section id="sv" class="bg-stone-50 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center gap-3">
+          <span class="text-brand text-3xl">🏅</span>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-widest text-brand">Sparte SV</p>
+            <h2 class="text-3xl font-bold text-stone-900">Allgemeiner Sport</h2>
+          </div>
+        </div>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-bold text-stone-900 flex items-center gap-2">🤸 Kinder- & Jugendturnen</h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-stone-600 list-disc pl-4">
+              <li>Kinderturnen bis 3 (mit 1 Elternteil)</li>
+              <li>Kinderturnen 3–8 Jahre</li>
+              <li>Rhythmische Bewegungen 8–14 Jahre</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-bold text-stone-900 flex items-center gap-2">💚 Gesundheitssport</h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-stone-600 list-disc pl-4">
+              <li>Gesundheitssport 60+</li>
+              <li>Pilates</li>
+              <li>Stuhlgymnastik</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-bold text-stone-900 flex items-center gap-2">🏋️ Fitness</h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-stone-600 list-disc pl-4">
+              <li>Yoga</li>
+              <li>Fitness-Boxen</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-bold text-stone-900 flex items-center gap-2">🏐 Ballsport</h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-stone-600 list-disc pl-4">
+              <li>Ballsport für Kinder ab 8</li>
+              <li>Tischtennis</li>
+              <li>Fußball</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-bold text-stone-900 flex items-center gap-2">🥋 Kampfsport</h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-stone-600 list-disc pl-4">
+              <li>Ju Jutsu</li>
+              <li>Judo (Elternteil + Kind bis 6)</li>
+              <li>Judo Kinder 6–12 Jahre</li>
+              <li>Krav Maga</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-stone-100 flex flex-col justify-center">
+            <h3 class="font-bold text-stone-900 flex items-center gap-2">🚶 Walking</h3>
+            <p class="mt-3 text-sm text-stone-600">Bewegung an der frischen Luft – gemeinsam in der Gruppe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Termine -->
+    <section id="termine" class="py-20 max-w-5xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-stone-900 text-center">Wichtige Termine</h2>
+      <p class="text-center text-stone-500 text-sm mt-2">Beispieldaten – bitte durch aktuelle Termine ersetzen.</p>
+      <div class="mt-8 grid sm:grid-cols-3 gap-4">
+        <div class="bg-brand-soft rounded-xl p-5 text-center">
+          <p class="text-brand-dark font-bold text-lg">15.03.</p>
+          <p class="text-sm text-stone-700 mt-1">Dart-Nachmittag</p>
+        </div>
+        <div class="bg-brand-soft rounded-xl p-5 text-center">
+          <p class="text-brand-dark font-bold text-lg">22.03.</p>
+          <p class="text-sm text-stone-700 mt-1">Bogenschießen</p>
+        </div>
+        <div class="bg-brand-soft rounded-xl p-5 text-center">
+          <p class="text-brand-dark font-bold text-lg">29.03.</p>
+          <p class="text-sm text-stone-700 mt-1">Mitgliederversammlung</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="bg-brand text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">Komm in die SG Lagesbüttel</h2>
+          <p class="mt-4 text-green-50">Schnuppern, Fragen oder beitreten – wir freuen uns auf dich.</p>
+          <ul class="mt-6 space-y-2 text-green-50 text-sm">
+            <li>📍 Sportanlage Lagesbüttel</li>
+            <li>📞 [Telefonnummer einfügen]</li>
+            <li>✉️ [E-Mail einfügen]</li>
+          </ul>
+        </div>
+        <form class="bg-white rounded-xl p-6 space-y-4 text-stone-800">
+          <input type="text" placeholder="Dein Name" class="w-full rounded-lg border border-stone-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+          <input type="email" placeholder="Deine E-Mail" class="w-full rounded-lg border border-stone-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+          <textarea rows="3" placeholder="Deine Nachricht" class="w-full rounded-lg border border-stone-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+          <button class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 rounded-lg transition">Senden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-900 text-stone-400 text-sm py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span class="inline-flex bg-white rounded-lg px-2 py-1"><img src="./logo.png" alt="SG Lagesbüttel" class="h-8 w-auto" /></span>
+      <div class="flex gap-6"><a href="#" class="hover:text-white">Impressum</a><a href="#" class="hover:text-white">Datenschutz</a></div>
+    </div>
+  </footer>
+</body>
+</html>
