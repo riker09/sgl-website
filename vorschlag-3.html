@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SG Lagesbüttel – Sport & Gemeinschaft</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script>
-    tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT:'#24890d', dark:'#1a660a', light:'#2fa814', soft:'#eef7ea' } } } } }
-  </script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-brand: #24890d;
+      --color-brand-dark: #1a660a;
+      --color-brand-light: #2fa814;
+      --color-brand-soft: #eef7ea;
+    }
+  </style>
 </head>
 <body class="bg-stone-50 text-stone-800 antialiased">
 

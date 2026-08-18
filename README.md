@@ -1,2 +1,2 @@
-# sql-website
+# sgl-website
 Website des SG Lagesbüttel
