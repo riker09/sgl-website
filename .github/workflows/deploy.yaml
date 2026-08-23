@@ -12,11 +12,17 @@ jobs:
       - name: Code auschecken
         uses: actions/checkout@v6
 
+      - name: Seite bauen
+        run: |
+          mkdir ./dist
+          cp -pr assets dist/
+          cp -p index.html logo.png dist/
+
       - name: Dateien per FTP hochladen
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ vars.SGL_FTP_SERVER }}
+          username: ${{ secrets.SGL_FTP_USERNAME }}
+          password: ${{ secrets.SGL_FTP_PASSWORD }}
           local-dir: ./dist # Lädt die gebaute Website hoch
-          server-dir: /html/ # Pfad bei FTP Hoster
+          server-dir: / # Pfad bei FTP Hoster
