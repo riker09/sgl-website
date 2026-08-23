@@ -26,5 +26,6 @@ jobs:
           remote-password: ${{ secrets.SGL_FTP_PASSWORD }}
           remote-protocol: "sftp"
           local-path: ./dist/ # Lädt die gebaute Website hoch
+          remote-path: /
           sync: full
           #remote-path: / # Pfad bei FTP Hoster
