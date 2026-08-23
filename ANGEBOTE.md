@@ -28,3 +28,4 @@
     * Judo für Kinder ab 6 bis 12 Jahre
     * Krav Maga
   * Walking
+  * Gesellschaftsspiele
