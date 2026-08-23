@@ -19,10 +19,10 @@ jobs:
           cp -p index.html logo.png dist/
 
       - name: Dateien per FTP hochladen
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ vars.SGL_FTP_SERVER }}
           username: ${{ secrets.SGL_FTP_USERNAME }}
           password: ${{ secrets.SGL_FTP_PASSWORD }}
-          local-dir: ./dist # Lädt die gebaute Website hoch
+          local-dir: ./dist/ # Lädt die gebaute Website hoch
           server-dir: / # Pfad bei FTP Hoster
