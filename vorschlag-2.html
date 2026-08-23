@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SG Lagesbüttel – Move. Train. Belong.</title>
+  <title>SG Lagesbüttel – Sport. Schießen. Gemeinsam.</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
     @theme {
@@ -14,7 +14,7 @@
     }
   </style>
 </head>
-<body class="bg-stone-950 text-stone-100 antialiased selection:bg-brand-light/40">
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-brand-light/40">
 
   <header class="absolute top-0 inset-x-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
@@ -30,7 +30,7 @@
 
   <main>
     <!-- Hero mit Bodenbild -->
-    <section class="relative min-h-screen flex items-end overflow-hidden">
+    <section class="relative min-h-screen flex items-end overflow-hidden bg-stone-950 text-stone-100">
       <img src="./Sporthallenboden.jpg" alt="Abstrakte Spielfeldlinien auf dem Sporthallenboden" class="absolute inset-0 w-full h-full object-cover opacity-50" />
       <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-950/20"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pb-24 w-full">
@@ -42,8 +42,25 @@
       </div>
     </section>
 
+    <!-- Sparte Sport -->
+    <section id="sv" class="py-24 max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl font-black uppercase">Allgemeiner <span class="text-brand-light">Sport</span></h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-4">
+        <div class="relative rounded-3xl overflow-hidden min-h-[280px] group">
+          <img src="./assets/images/tischtennis_klein.jpg" alt="Tischtennis" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><p class="text-stone-100 text-xl font-bold">🏐 Ballsport</p><h3 class="text-stone-100 text-sm mt-1">Kinder · Tischtennis · Fußball</h3></div>
+        </div>
+        <div class="rounded-3xl bg-stone-100 border border-stone-200 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🤸 Turnen</h3><p class="text-stone-700 text-sm mt-2">Kinder‑ & Jugendturnen, rhythmische Bewegungen</p></div>
+        <div class="rounded-3xl bg-stone-100 border border-stone-200 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🥋 Kampfsport</h3><p class="text-stone-700 text-sm mt-2">Ju Jutsu · Judo · Krav Maga</p></div>
+        <div class="rounded-3xl bg-stone-100 border border-stone-200 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">💚 Gesundheitssport</h3><p class="text-stone-700 text-sm mt-2">60+ · Pilates · Stuhlgymnastik</p></div>
+        <div class="rounded-3xl bg-stone-100 border border-stone-200 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🏋️‍♀️ Fitness</h3><p class="text-stone-700 text-sm mt-2">Yoga · Fitness-Boxen</p></div>
+        <div class="rounded-3xl bg-stone-100 border border-stone-200 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🚶 Walking</h3><p class="text-stone-700 text-sm mt-2">Frische Luft, gute Laune</p></div>
+      </div>
+    </section>
+
     <!-- Stats -->
-    <section class="border-y border-stone-800 bg-stone-900/50">
+    <section class="border-y border-stone-800 bg-stone-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div><p class="text-3xl font-black text-brand-light">2</p><p class="text-xs uppercase tracking-widest text-stone-400 mt-1">Sparten</p></div>
         <div><p class="text-3xl font-black text-brand-light">8</p><p class="text-xs uppercase tracking-widest text-stone-400 mt-1">Schieß‑Gattungen</p></div>
@@ -52,48 +69,31 @@
       </div>
     </section>
 
-    <!-- Sparte Sport -->
-    <section id="sv" class="py-24 max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="text-4xl font-black uppercase">Allgemeiner <span class="text-brand-light">Sport</span></h2>
-      <div class="mt-10 grid md:grid-cols-3 gap-4">
-        <div class="relative rounded-3xl overflow-hidden min-h-[280px] group">
-          <img src="./sgl.jpg" alt="Die Sporthalle in Lagesbüttel" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 to-transparent"></div>
-          <div class="absolute bottom-0 p-6"><p class="text-brand-light text-xs uppercase tracking-widest">Ballsport</p><h3 class="text-2xl font-bold mt-1">🏐 Kinder · Tischtennis · Fußball</h3></div>
-        </div>
-        <div class="rounded-3xl bg-stone-900 border border-stone-800 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🤸 Turnen</h3><p class="text-stone-400 text-sm mt-2">Kinder‑ & Jugendturnen, rhythmische Bewegungen</p></div>
-        <div class="rounded-3xl bg-stone-900 border border-stone-800 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🥋 Kampfsport</h3><p class="text-stone-400 text-sm mt-2">Ju Jutsu · Judo · Krav Maga</p></div>
-        <div class="rounded-3xl bg-stone-900 border border-stone-800 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">💚 Gesundheitssport</h3><p class="text-stone-400 text-sm mt-2">60+ · Pilates · Stuhlgymnastik</p></div>
-        <div class="rounded-3xl bg-stone-900 border border-stone-800 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🏋️‍♀️ Fitness</h3><p class="text-stone-400 text-sm mt-2">Yoga · Fitness-Boxen</p></div>
-        <div class="rounded-3xl bg-stone-900 border border-stone-800 p-6 hover:border-brand-light transition"><h3 class="text-xl font-bold">🚶 Walking</h3><p class="text-stone-400 text-sm mt-2">Frische Luft, gute Laune</p></div>
-      </div>
-    </section>
-
     <!-- Sparte KKV -->
     <section id="kkv" class="py-24 max-w-7xl mx-auto px-4 sm:px-6">
       <h2 class="text-4xl font-black uppercase">Schieß<span class="text-brand-light">sport</span> <span class="text-stone-500 text-lg font-medium">· KKV</span></h2>
       <div class="mt-8 flex flex-wrap gap-3">
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">Luftgewehr</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">Luftpistole</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">Scatt-Gewehr</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">Kleinkalibergewehr</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">Sportpistole</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">🏹 Bogenschießen</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">Blasrohr</span>
-        <span class="px-5 py-3 rounded-xl bg-stone-900 border border-stone-700 hover:border-brand-light transition font-medium">🎯 Dart</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Luftgewehr</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Luftpistole</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Scatt-Gewehr</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Kleinkalibergewehr</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Sportpistole</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">🏹 Bogenschießen</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Blasrohr</span>
+        <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">🎯 Dart</span>
       </div>
     </section>
 
     <!-- Termine -->
     <section id="termine" class="relative py-24 overflow-hidden">
-      <img src="./Sporthallenboden.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-15" />
+      <img src="./Sporthallenboden.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-25" />
       <div class="absolute inset-0 bg-stone-950/85"></div>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 class="text-4xl font-black uppercase text-center">Termine <span class="text-xs font-medium text-stone-500 uppercase">(Beispiel)</span></h2>
+      <div class="relative max-w-2xl mx-auto px-4 sm:px-6">
+        <h2 class="text-4xl font-black uppercase text-center text-stone-50">Termine <span class="text-xs font-medium text-stone-500 uppercase">(Beispiel)</span></h2>
         <div class="mt-10 divide-y divide-stone-700/60 border-y border-stone-700/60">
-          <div class="flex items-center justify-between py-5"><span class="font-semibold">Dart‑Nachmittag</span><span class="text-stone-400">15.03.</span></div>
-          <div class="flex items-center justify-between py-5"><span class="font-semibold">Bogenschießen</span><span class="text-stone-400">22.03.</span></div>
-          <div class="flex items-center justify-between py-5"><span class="font-semibold">Mitgliederversammlung</span><span class="text-stone-400">29.03.</span></div>
+          <div class="flex items-center justify-between py-5"><span class="font-semibold text-stone-400">Dart‑Nachmittag</span><span class="text-stone-200">15.03.</span></div>
+          <div class="flex items-center justify-between py-5"><span class="font-semibold text-stone-400">Bogenschießen</span><span class="text-stone-200">22.03.</span></div>
+          <div class="flex items-center justify-between py-5"><span class="font-semibold text-stone-400">Mitgliederversammlung</span><span class="text-stone-200">29.03.</span></div>
         </div>
       </div>
     </section>
@@ -101,19 +101,22 @@
     <!-- CTA -->
     <section id="kontakt" class="py-24 max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <h2 class="text-4xl sm:text-5xl font-black uppercase">Bereit für den ersten Schritt?</h2>
-      <p class="mt-4 text-stone-400 max-w-xl mx-auto">Schnuppern, fragen, beitreten – die SG Lagesbüttel freut sich auf dich.</p>
+      <p class="mt-4 text-stone-700 max-w-xl mx-auto">Schnuppern, fragen, beitreten – die SG Lagesbüttel freut sich auf dich.</p>
       <div class="my-8 flex flex-wrap justify-center gap-4">
-        <a href="mailto:info@lagesbuettel.de" class="bg-brand hover:bg-brand-dark font-bold px-8 py-4 rounded-full transition">E‑Mail schreiben</a>
+        <a href="mailto:info@lagesbuettel.de" class="bg-brand hover:bg-brand-dark font-bold text-white px-8 py-4 rounded-full transition">E‑Mail schreiben</a>
       </div>
-      <p class="mt-4 text-stone-400 max-w-xl mx-auto">Oder einfach vorbei kommen:</p>
-      <p class="mt-4 text-stone-400 max-w-xl mx-auto">Waller Lehmweg 8<br/>38179 Lagesbüttel</p>
+      <p class="mt-4 text-stone-700 max-w-xl mx-auto">Oder einfach vorbei kommen:</p>
+      <p class="mt-4 text-stone-700 max-w-xl mx-auto">Waller Lehmweg 8<br/>38179 Lagesbüttel</p>
     </section>
   </main>
 
-  <footer class="border-t border-stone-800 py-8 text-stone-500 text-sm">
+  <footer class="bg-stone-950 border-t border-stone-800 py-8 text-stone-500 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
       <span class="inline-flex bg-white rounded-lg px-2 py-1"><img src="./logo.png" alt="SG Lagesbüttel" class="h-8 w-auto" /></span>
-      <div class="flex gap-6"><a href="#" class="hover:text-white">Impressum</a><a href="#" class="hover:text-white">Datenschutz</a></div>
+      <div class="flex gap-6">
+        <a href="impressum.html" class="hover:text-white">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-white">Datenschutz</a>
+      </div>
     </div>
   </footer>
 </body>
