@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-brand-light/40">
+
+  <header class="absolute top-0 inset-x-0 z-50">
+    {{ partial "nav.html" . }}
+  </header>
+
+  <main>
+    {{ block "main" . }}
+      This will be replaced with content from the
+      corresponding "define" action found in the template
+      to which this _base_ template is applied.
+    {{ end }}
+  </main>
+
+  <footer class="bg-stone-950 border-t border-stone-800 py-8 text-stone-500 text-sm">
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>
