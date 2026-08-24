@@ -1,5 +1,10 @@
-# Datenschutzerklärung
-
+---
+date: '2026-08-24T19:46:54+02:00'
+draft: false
+title: 'Datenschutzerklärung'
+slug: datenschutz
+custom_css: ["css/page.css"]
+---
 Diese Datenschutzerklärung beinhaltet die „Informationspflicht bei Erhebung von personenbezogenen Daten bei einer betroffenen Person“ gemäß der aktuellen Fassung Datenschutz Grundverordnung (DSGVO).
 
 **Verantwortlich**:
@@ -13,10 +18,10 @@ Zur Erfüllung der Zwecke des Vereins werden unter Beachtung der gesetzlichen Vo
 
 Dies sind insbesondere:
 
-I. **persönliche Daten** wie Name, Adresse, Geburtsdatum
-II. **Kontaktdaten** wie Telefonnummer, ggf. Faxnummer, Mobiltelefonnummer und E-Mail-Adresse.
-III. **Bankdaten** zum Zwecke des Zahlungsverkehrs werden auch Bankdaten und Kontonummern gespeichert.
-IV. **Allgemeine Daten** für die Vereinsverwaltung wie Eintrittsdatum, Funktion und Mitgliedsnummer.
+1. **persönliche Daten** wie Name, Adresse, Geburtsdatum
+2. **Kontaktdaten** wie Telefonnummer, ggf. Faxnummer, Mobiltelefonnummer und E-Mail-Adresse.
+3. **Bankdaten** zum Zwecke des Zahlungsverkehrs werden auch Bankdaten und Kontonummern gespeichert.
+4. **Allgemeine Daten** für die Vereinsverwaltung wie Eintrittsdatum, Funktion und Mitgliedsnummer.
 
 **Die Speicherung und Verarbeitung** der erfassten Daten erfolgten auf einem zentralen Server des Vereins. Sollte die Speicherung zukünftig in Clouddiensten erfolgen, werden diese Daten gemäß DSGVO geschützt. Die personenbezogenen Daten werden dabei durch geeignete technische und organisatorische Maßnahmen vor der Kenntnisnahme Dritter geschützt.
 

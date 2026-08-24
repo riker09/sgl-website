@@ -1,0 +1,17 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SG Lagesbüttel – Sport. Schießen. Gemeinsam.</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @theme {
+    --color-brand: #24890d;
+    --color-brand-dark: #1a660a;
+    --color-brand-light: #4ade80;
+    --color-brand-glow: #22c55e;
+  }
+</style>
+{{ if .Params.custom_css }}
+  {{ range .Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+  {{ end }}
+{{ end }}
