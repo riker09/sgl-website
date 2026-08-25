@@ -12,11 +12,13 @@ jobs:
       - name: Code auschecken
         uses: actions/checkout@v6
 
-      - name: Seite bauen
-        run: |
-          mkdir ./dist
-          cp -pr assets dist/
-          cp -p index.html logo.png dist/
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3.2.1
+        with:
+          hugo-version: '0.165.0'
+
+      - name: Build Site
+        run: hugo --minify
 
       - name: Dateien per FTP hochladen
         uses: milanmk/actions-file-deployer@1.18
