@@ -5,7 +5,11 @@
 </head>
 <body class="bg-stone-50 text-stone-900 antialiased selection:bg-brand-light/40">
 
+  {{ if .IsHome }}
   <header class="absolute top-0 inset-x-0 z-50">
+  {{ else }}
+  <header class="inset-x-0 z-50 bg-stone-950 border-b border-stone-800">
+  {{ end }}
     {{ partial "nav.html" . }}
   </header>
 
