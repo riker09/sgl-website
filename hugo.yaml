@@ -2,6 +2,7 @@ baseURL: https://static.sg-lagesbüttel.de/
 locale: de-de
 title: SG Lagesbüttel - Sport. Schießen. Gemeinsam.
 publishDir: dist
+buildFuture: true
 cleanDestinationDir: true
 uglyURLs: true
 permalinks:

@@ -69,9 +69,12 @@
   <div class="relative max-w-2xl mx-auto px-4 sm:px-6">
     <h2 class="text-4xl font-black uppercase text-center text-stone-50">Termine <span class="text-xs font-medium text-stone-500 uppercase">(Beispiel)</span></h2>
     <div class="mt-10 divide-y divide-stone-700/60 border-y border-stone-700/60">
-      <div class="flex items-center justify-between py-5"><span class="font-semibold text-stone-400">Dart‑Nachmittag</span><span class="text-stone-200">15.03.</span></div>
-      <div class="flex items-center justify-between py-5"><span class="font-semibold text-stone-400">Bogenschießen</span><span class="text-stone-200">22.03.</span></div>
-      <div class="flex items-center justify-between py-5"><span class="font-semibold text-stone-400">Mitgliederversammlung</span><span class="text-stone-200">29.03.</span></div>
+      {{ range (where .Site.RegularPages "Section" "termin") }}
+        <div class="flex items-center justify-between py-5">
+          <span class="font-semibold text-stone-200">{{ .Title }}</span>
+          <span class="text-stone-200">{{ .Date | time.Format "02.01." }}</span>
+        </div>
+      {{ end }}
     </div>
   </div>
 </section>
