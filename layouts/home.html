@@ -45,14 +45,53 @@
 <section id="kkv" class="py-24 max-w-7xl mx-auto px-4 sm:px-6">
   <h2 class="text-4xl font-black uppercase">Schieß<span class="text-brand-light">sport</span> <span class="text-stone-500 text-lg font-medium">· KKV</span></h2>
   <div class="mt-8 flex flex-wrap gap-3">
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Luftgewehr</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Luftpistole</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Scatt-Gewehr</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Kleinkalibergewehr</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Sportpistole</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">🏹 Bogenschießen</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">Blasrohr</span>
-    <span class="px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium">🎯 Dart</span>
+    <button content-id="content-kkv-luft-scatt" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      Luftgewehr
+    </button>
+    <button content-id="content-kkv-luft-scatt" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      Luftpistole
+    </button>
+    <button content-id="content-kkv-luft-scatt" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      Scatt-Gewehr
+    </button>
+    <button content-id="content-kkv-kleinkaliber" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      Kleinkalibergewehr
+    </button>
+    <button content-id="content-kkv-sportpistole" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      Sportpistole
+    </button>
+    <button content-id="content-kkv-bogenschiessen" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      🏹 Bogenschießen
+    </button>
+    <button content-id="content-kkv-blasrohr" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      Blasrohr
+    </button>
+    <button content-id="content-kkv-dart" class="dialog-btn px-5 py-3 rounded-xl bg-stone-100 border border-stone-200 hover:border-brand-light transition font-medium cursor-pointer">
+      🎯 Dart
+    </button>
+  </div>
+
+  <!-- Versteckter Inhalt für KKV, wird erst nach Klick gezeigt -->
+  <div class="hidden hidden-content">
+    <div id="content-kkv-luft-scatt">
+      {{ $luft1 := resources.Get "images/kkv/luft-1.jpg" }}
+      {{ $luft2 := resources.Get "images/kkv/luft-2.jpg" }}
+      <h6>Luftgewehr, Luftpistole und Scatt-Gewehr</h6>
+      <p>Auf 8 modernen digitalen Schießständen bieten wir die Möglichkeit den Schießsport mit dem Luftgewehr, der Luftpistole oderdem Scatt-Gewehr an.</p>
+      <img src="{{ $luft1.RelPermalink }}" alt="" />
+      <p>Aus vielen unterschiedlichen Varianten kann je Waffenart das Schießprogramm ausgewählt werden. Das Trefferbild wird sofort auf dem Tablet angezeigt. Für die Wartenden im Aufenthalsraum werden die einzelnen Stände und Trefferbilder auf einem großen Bildschiem ebenfalls angezeigt.</p>
+      <img src="{{ $luft2.RelPermalink }}" alt="" />
+      <p>Sportgeräte wie das Luftgewehr, die Luftpistole oder das Scatt-Gewehr können bei uns ausgeliehen werden. Unter fachkundiger Anleitung und Begleitung auf dem Schießstand kann es Jeder mal versuchen.</p>
+    </div>
+
+    <div id="content-kkv-kleinkaliber">
+      {{ $kkv := resources.Get "images/kkv/kkv.jpg" }}
+      <h6>Kleinkalibergewehr</h6>
+      <p>Auf 4 x 50 Meter Bahnen kann mit dem Kleinkalibergewehr stehend, stehend Auflage, sitzend und liegend geschossen werden.</p>
+      <img src="{{ $kkv.RelPermalink }}" alt="" />
+      <p>Eine moderne digitale Trefferanzeige zeigt das Ergebnis auf 100-stel genau in Echtzeit auf einem Monitor beim Schützen an und sorgt somit für ein ganz neues Schießerlebnis.</p>
+      <p>Gewehre für Rechts- und Linkshänder, sowie die entsprechenden Hilfsmittel wie Schießjacken, Handschuhe, etc sind im Verein verfügbar und stehen zur Verfügung.</p>
+    </div>
   </div>
 </section>
 
@@ -94,4 +133,13 @@
   <p class="mt-4 text-stone-700 max-w-xl mx-auto">Oder einfach vorbei kommen:</p>
   <p class="mt-4 text-stone-700 max-w-xl mx-auto">Waller Lehmweg 8<br/>38179 Lagesbüttel</p>
 </section>
+
+<!-- Hidden dialog for dynamic content -->
+<dialog id="dialog" closedby="any">
+  <div class="dialog-content"></div>
+  <div class="dialog-footer">
+    <button commandfor="dialog" command="close">Schließen</button>
+  </div>
+</dialog>
+
 {{ end }}
