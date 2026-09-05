@@ -70,9 +70,14 @@
     <h2 class="text-4xl font-black uppercase text-center text-stone-50">Termine <span class="text-xs font-medium text-stone-500 uppercase">(Beispiel)</span></h2>
     <div class="mt-10 divide-y divide-stone-700/60 border-y border-stone-700/60">
       {{ range (where .Site.RegularPages "Section" "termin") }}
-        <div class="flex items-center justify-between py-5">
-          <span class="font-semibold text-stone-200">{{ .Title }}</span>
-          <span class="text-stone-200">{{ .Date | time.Format "02.01." }}</span>
+        <div class="item">
+          <div class="flex items-center justify-between py-5 cursor-pointer">
+            <span class="font-semibold text-stone-200">{{ .Title }}</span>
+            <span class="text-stone-200">{{ .Date | time.Format "02.01." }}</span>
+          </div>
+          <div class="hidden text-stone-200 content">
+            {{ .Content }}
+          </div>
         </div>
       {{ end }}
     </div>

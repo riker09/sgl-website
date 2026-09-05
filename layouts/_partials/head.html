@@ -10,6 +10,7 @@
     --color-brand-glow: #22c55e;
   }
 </style>
+<link rel="stylesheet" href="css/main.css">
 {{ if .Params.custom_css }}
   {{ range .Params.custom_css }}
     <link rel="stylesheet" href="{{ . | relURL }}">

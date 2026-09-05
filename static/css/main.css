@@ -1,0 +1,69 @@
+ol, ul {
+  margin-left: 2rem
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+ul {
+  list-style: disc;
+}
+
+p, ol, ul {
+  line-height: 1.5;
+  margin-bottom: .8rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+dialog {
+  margin: auto;
+  /* Demo styles */
+  padding: 2rem;
+  border: solid black 1px;
+  border-radius: 0.25rem;
+}
+
+.dialog-content {
+  max-width: 60vw;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.dialog-content img {
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+::backdrop {
+  /* Demo background */
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+  opacity: 0.75;
+}

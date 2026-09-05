@@ -3,7 +3,6 @@ date: '2026-08-24T19:46:54+02:00'
 draft: false
 title: 'Datenschutzerklärung'
 slug: datenschutz
-custom_css: ["css/page.css"]
 ---
 Diese Datenschutzerklärung beinhaltet die „Informationspflicht bei Erhebung von personenbezogenen Daten bei einer betroffenen Person“ gemäß der aktuellen Fassung Datenschutz Grundverordnung (DSGVO).
 

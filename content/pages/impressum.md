@@ -2,7 +2,6 @@
 date: '2026-08-24T19:46:54+02:00'
 draft: false
 title: 'Impressum'
-custom_css: ["css/page.css"]
 ---
 ## Angaben gemäß § 5 DDG
 
